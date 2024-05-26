@@ -16,36 +16,21 @@ export class CreateMedicTable1614660586514 implements MigrationInterface {
                     type: 'varchar(120)',
                 },
                 {
-                    name: 'cel',
+                    name: 'status',
                     type: 'varchar',
                 },
                 {
-                    name: 'cep',
+                    name: 'amount',
                     type: 'varchar',
                 },
-                {
-                    name: 'logradouro',
-                    type: 'varchar'
-                },
-                {
-                    name: 'bairro',
-                    type: 'varchar'
-                },
-                {
-                    name: 'localidade',
-                    type: 'varchar'
-                },
-                {
-                    name: 'uf',
-                    type: 'varchar',
-                },
+               
               
             ]
         }))
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable('medic')
+        await queryRunner.dropTable('customer')
     }
 
 }
