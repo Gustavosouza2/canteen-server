@@ -11,14 +11,10 @@ export class Customer {
   name: string;
 
   @Column()
-  cel: string;
-
- 
-  @Column()
-  uf: string;
+  status: string;
 
   @Column()
-  specialties: string;
+  amount: string;
 
   @Column({
       default: false
